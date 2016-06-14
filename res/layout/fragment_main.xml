@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_message" />
+
+    <EditText
+        android:id="@+id/edit_message2"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@+id/edit_message1"
+        android:layout_toRightOf="@+id/edit_message1"
+        android:ems="10"
+        android:hint="@string/edit_message2" />
+
+    <EditText
+        android:id="@+id/edit_message3"
+        android:layout_width="75dp"
+        android:layout_height="45dp"
+        android:layout_alignBaseline="@+id/edit_message2"
+        android:layout_alignBottom="@+id/edit_message2"
+        android:layout_toRightOf="@+id/edit_message2"
+        android:ems="10"
+        android:hint="@string/edit_message3" >
+
+        <requestFocus />
+    </EditText>
+
+         <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignTop="@+id/edit_message3"
+             android:layout_toRightOf="@+id/edit_message3"
+             android:onClick="sendMessage"
+             android:text="@string/button_send" />
+
+         <EditText
+             android:id="@+id/edit_message1"
+             android:layout_width="60dp"
+             android:layout_height="45dp"
+             android:layout_alignParentLeft="true"
+             android:layout_below="@+id/textView"
+             android:layout_marginTop="19dp"
+             android:ems="10"
+             android:hint="@string/edit_message1" />
+
+</RelativeLayout>
